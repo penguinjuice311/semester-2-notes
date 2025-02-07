@@ -63,9 +63,14 @@
     \item In general, continuity \(\not\Rightarrow\) uniform continuity
 
     \item A function \(f:D\rightarrow\mathbb{R}\) is continuous at \(a\in\mathbb{R}\) iff:
-    \\\(\forall(x_n)_{n\in\mathbb{N}}, x_n\in D, \lim_{n\to\infty}{x_n} = a, \lim_{n\to\infty}{f(x_n)}=f(a)\)
-\end{itemize}
+    \[\forall(x_n)_{n\in\mathbb{N}}, x_n\in D, \lim_{n\to\infty}{x_n} = a, \lim_{n\to\infty}{f(x_n)}=f(a)\]
+    \item An alternative statement of this is:
+    \[\lim{f(x_n)}=f(\lim(x_n))\]
 
+    if f not continuous at a:
+    \[\exists\epsilon>0:\forall\delta>0, \exists x\in D:\]
+    \[|x-a|<\delta\Rightarrow|f(x)-f(a)|\ge\epsilon\]
+    
 
 \begin{theorem}[Intermediate Value Theorem]
 
@@ -74,6 +79,11 @@
     then \(u\in C\Rightarrow \exists x\in D: u=f(x)\)
 
 \end{theorem} 
+
+    \item A function is also continuous if:
+    \item \(\delta >0: \forall x\in D\backslash a: |x-a|>\delta\)
+    \item \(\forall (x_n)_{n\in\mathbb{N}}\)
+\end{itemize}
 
 
 \newpage
@@ -445,14 +455,11 @@
 \eqnsubsection{Resonance Frequency}
 
 \begin{itemize}
-    %todo
-    \marginpar{DE}
     \item For \(\ddot x + \frac{b}{m}\dot x + \frac{k}{m}x = \frac{1}{m}f_d, f_d = d\cos(\omega_d t+\varphi)\)
+    \marginpar{DE}
     \item We know that for FHM, \(f=f_d\) so:
-    \item Assume \({x(t)=Re[\mathcal{A}e^{i\omega_d t}], F_d=Re[\mathcal{D}e^{i\omega_d t}]}\) 
-    \item Where \(\mathcal{D} = De^{i\varphi_d}\)
-    \item Into DE:
-    \item \(-\omega_d^2\mathcal{A}e^{i\omega_d t} + \frac{b}{m}i\omega_d\mathcal{A}e^{i\omega_d t}+\frac{k}{m}\mathcal{A}e^{i\omega_d t}=\frac{1}{m}\mathcal{D}e^{i\omega_d t}\)
+    \item Assume \({x(t)=Re[\mathcal{A}e^{i\omega_d t}], F_d=Re[\mathcal{D}e^{i\omega_d t}]}\) where \(\mathcal{D} = De^{i\varphi_d}\)
+    \item Into DE: \(-\omega_d^2\mathcal{A}e^{i\omega_d t} + \frac{b}{m}i\omega_d\mathcal{A}e^{i\omega_d t}+\frac{k}{m}\mathcal{A}e^{i\omega_d t}=\frac{1}{m}\mathcal{D}e^{i\omega_d t}\)
     \item \(\Rightarrow \mathcal{A}(\omega_d^2-\frac{b}{m}i\omega_d-\frac{k}{m})=-\frac{1}{m}\mathcal{D}\)
     \item \(\Rightarrow \mathcal{A}=\frac{\mathcal{D}/m}{\omega_d^2-\frac{b}{m}i\omega_d-\omega_0^2}\) where \(\omega_0=\sqrt{\frac{k}{m}}\)
     \item Then, amplitude \(A=|\mathcal{A}|=\frac{D/m}{\sqrt{(\omega_d^2-\omega_0^2)^2+\frac{b^2}{m^2}\omega_d^2}}\)
