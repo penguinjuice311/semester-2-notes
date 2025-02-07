@@ -193,9 +193,9 @@
 
 \begin{itemize}
     \marginpar{7/2/25}
-    \item A forced harmonic oscillator (FHO) is once subject to an external driving force \(f_d\)
-    \item \(\ddot x + \frac{b}{m}\dot x + \frac{k}{m}=\frac{1}{m}f_d\)
-    \item Considering \(f_d=\mathcal d cos(\omega_dt+\varphi_d)\):
+    \item A forced harmonic oscillator (FHO) is one subject to an external driving force \(F_d\)
+    \item \(\ddot x + \frac{b}{m}\dot x + \frac{k}{m}=\frac{1}{m}F_d\)
+    \item If the driving force is also periodic, the motion will oscillate at the driving frequency \(f_d\)
     \tagequation{\omega_r=\omega_0\sqrt{\frac{k}{m}-\frac{b^2}{2m^2}}}
     \item Where A is maximised at \(\omega_d=\omega_r\)
 \end{itemize}
@@ -448,11 +448,19 @@
     %todo
     \marginpar{DE}
     \item For \(\ddot x + \frac{b}{m}\dot x + \frac{k}{m}x = \frac{1}{m}f_d, f_d = d\cos(\omega_d t+\varphi)\)
-    \item assume \({x(t)=\mathcal{A}e^{i\omega_d t}, f_d=\mathcal{D}e^{i\omega}}\) 
+    \item We know that for FHM, \(f=f_d\) so:
+    \item Assume \({x(t)=Re[\mathcal{A}e^{i\omega_d t}], F_d=Re[\mathcal{D}e^{i\omega_d t}]}\) 
+    \item Where \(\mathcal{D} = De^{i\varphi_d}\)
     \item Into DE:
-    \item \(-\omega_d^2Ae^{i\omega_dt} + \frac{b}{m}i\omega_d Ae^{i\omega_d t} + \frac{k}{m}Ae^{i\omega_d t} = \frac{1}{m}Ce^{i\omega_dt}\)
-    \item \(\Rightarrow A(\omega_d^2-\frac{b}{m}i\omega_d)-\frac{k}{m}=-\frac{1}{m}C\)
-    \item 
+    \item \(-\omega_d^2\mathcal{A}e^{i\omega_d t} + \frac{b}{m}i\omega_d\mathcal{A}e^{i\omega_d t}+\frac{k}{m}\mathcal{A}e^{i\omega_d t}=\frac{1}{m}\mathcal{D}e^{i\omega_d t}\)
+    \item \(\Rightarrow \mathcal{A}(\omega_d^2-\frac{b}{m}i\omega_d-\frac{k}{m})=-\frac{1}{m}\mathcal{D}\)
+    \item \(\Rightarrow \mathcal{A}=\frac{\mathcal{D}/m}{\omega_d^2-\frac{b}{m}i\omega_d-\omega_0^2}\) where \(\omega_0=\sqrt{\frac{k}{m}}\)
+    \item Then, amplitude \(A=|\mathcal{A}|=\frac{D/m}{\sqrt{(\omega_d^2-\omega_0^2)^2+\frac{b^2}{m^2}\omega_d^2}}\)
+    \item It is obvious that \(A_{max}\) occurs at the minimum of the denominator
+    \item \(\frac{d\mathcal{W}}{d\omega_0}=\frac{d}{d\omega_0}[\sqrt{(\omega_d^2-\omega_0^2)^2+\frac{b^2}{m^2}\omega_d^2}]=\frac{\frac{1}{2}[4(\omega_d^3-\omega_d\omega_0^2)+2\frac{b}{m}^2\omega_d]}{\mathcal{W}}\)
+    \item \(\frac{d\mathcal{W}}{d\omega_0}\rvert_{\omega_r}\Rightarrow 2\omega_r[(\omega_r^2-\omega_0^2)+\frac{b}{m}^2]=0\)
+    \item \(\omega_d \not=0\Rightarrow\omega_r^2=\omega_0^2-\frac{b^2}{2m^2}\)
+    \item \(\Rightarrow\boxed{\omega_r=\sqrt{\frac{k}{m}-\frac{b^2}{2m^2}}}\)
 \end{itemize}
 
 \subsection{Modern Physics}
