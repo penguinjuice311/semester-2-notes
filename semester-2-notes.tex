@@ -206,7 +206,7 @@
     \item A forced harmonic oscillator (FHO) is one subject to an external driving force \(F_d\)
     \item \(\ddot x + \frac{b}{m}\dot x + \frac{k}{m}=\frac{1}{m}F_d\)
     \item If the driving force is also periodic, the motion will oscillate at the driving frequency \(f_d\)
-    \tagequation{\omega_r=\omega_0\sqrt{\frac{k}{m}-\frac{b^2}{2m^2}}}
+    \tagequation{\omega_r=\sqrt{\frac{k}{m}-\frac{b^2}{2m^2}}}
     \item Where A is maximised at \(\omega_d=\omega_r\)
 \end{itemize}
 
@@ -221,6 +221,7 @@
     \item Considering the alternate normal mode: \(x_1(t)=-x_2(t)\)
     \item And the motion \(\omega_2=\sqrt{\frac{k+2k^{\prime}}{m}}\)
     \item In n dimensions, there are n normal modes, and all normal frequencies are normal frequencies
+    \item All modes of a system are superpositions of the normal modes
 \end{itemize}
 
 
@@ -477,8 +478,8 @@
     \item \(\Rightarrow \mathcal{A}=\frac{\mathcal{D}/m}{\omega_d^2-\frac{b}{m}i\omega_d-\omega_0^2}\) where \(\omega_0=\sqrt{\frac{k}{m}}\)
     \item Then, amplitude \(A=|\mathcal{A}|=\frac{D/m}{\sqrt{(\omega_d^2-\omega_0^2)^2+\frac{b^2}{m^2}\omega_d^2}}\)
     \item It is obvious that \(A_{max}\) occurs at the minimum of the denominator
-    \item \(\frac{d\mathcal{W}}{d\omega_0}=\frac{d}{d\omega_0}[\sqrt{(\omega_d^2-\omega_0^2)^2+\frac{b^2}{m^2}\omega_d^2}]=\frac{\frac{1}{2}[4(\omega_d^3-\omega_d\omega_0^2)+2\frac{b}{m}^2\omega_d]}{\mathcal{W}}\)
-    \item \(\frac{d\mathcal{W}}{d\omega_0}\rvert_{\omega_r}\Rightarrow 2\omega_r[(\omega_r^2-\omega_0^2)+\frac{b}{m}^2]=0\)
+    \item \(\frac{d\mathcal{W}}{d\omega_d}=\frac{d}{d\omega_0}[\sqrt{(\omega_d^2-\omega_0^2)^2+\frac{b^2}{m^2}\omega_d^2}]=\frac{\frac{1}{2}[4(\omega_d^3-\omega_d\omega_0^2)+2\frac{b}{m}^2\omega_d]}{\mathcal{W}}\)
+    \item \(\frac{d\mathcal{W}}{d\omega_d}\rvert_{\omega_r}\Rightarrow 2\omega_r[2(\omega_r^2-\omega_0^2)+\frac{b}{m}^2]=0\)
     \item \(\omega_d \not=0\Rightarrow\omega_r^2=\omega_0^2-\frac{b^2}{2m^2}\)
     \item \(\Rightarrow\boxed{\omega_r=\sqrt{\frac{k}{m}-\frac{b^2}{2m^2}}}\)
 \end{itemize}
