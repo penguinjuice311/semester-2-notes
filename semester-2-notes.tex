@@ -244,6 +244,15 @@
     \item For sinusoidal waves:
     \item \(y(x, t)=A\cos(k[x\mp vt]+\varphi)=A\cos(kx\mp\omega t+\varphi)=A\cos(2\pi[\frac{x}{\lambda}\mp ft]+\varphi)\)
     \item where \(k=\)the wave number or spacial frequency, and \(k=\frac{1}{\lambda}\)
+
+    \item The general wave equaiton can be written as:
+    \tagequation{\frac{\partial^2 y}{\partial t^2}=v^2\frac{\partial^2 y}{\partial x^2}}
+\end{itemize}
+
+\subsubsection*{The Superposition Principle}
+
+\begin{itemize}
+    \item When 2 wave forms meet, they pass through eachother and interfere, but maintain their shape
 \end{itemize}
 
 
@@ -542,6 +551,20 @@
     \item \(m\ddot x_1 = -kx_1 - k^{prime}(x_1-x_2)\)
     \item \(m\ddot x_2 = -kx_2 - k^{prime}(x_2-x_1)\)
 \end{itemize}
+
+\eqnsubsection{The Wave Equation}
+\begin{itemize}
+    \item \(y(x, t)=f(x-vt)\)
+    \item Then, \(\frac{\partial^2 y}{\partial t^2}=\frac{\partial}{\partial t}\frac{\partial y}{\partial t}=\frac{df}{dt}\cdot \frac{\partial}{\partial t}(x-vt)=-v\frac{df}{dt}\)
+    \item \(\frac{\partial^2 y}{\partial t^2}=\frac{d^2 f}{dt^2}\cdot\frac{\partial}{\partial t}(x-vt)\cdot -v=(-v)^2\frac{d^2f}{dt^2}=v^2\frac{d^2f}{dt^2}\)
+    \marginpar{Eq1}
+    \item \(\frac{\partial y}{\partial x}=\frac{df}{dt}\cdot \frac{\partial (x-vt)}{\partial x}=\frac{df}{dx}\cdot 1\)
+    \item \(\frac{d^2y}{dx^2}=\frac{d^2f}{dt^2}\cdot \frac{\partial (x-vt)}{\partial x}=\frac{d^2f}{dt^2}\)
+    \item Then, using Eq1, for any travelling wave:
+    \item \(\boxed{\frac{\partial^2 y}{\partial t^2}=v^2\frac{\partial^2 y}{\partial x^2}}\) 
+    
+\end{itemize}
+
 
 \subsection{Modern Physics}
 
