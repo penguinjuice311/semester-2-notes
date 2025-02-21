@@ -5,6 +5,7 @@
 \usepackage{hyperref}
 \usepackage{braket}
 \usepackage{amsmath}
+\usepackage{xcolor}
 
 
 \title{Semester 2 Notes}
@@ -19,6 +20,8 @@
 \newcounter{eq}[section]
 \newcommand{\equationref}{\stepcounter{eq}\arabic{section}.\arabic{eq}}
 \newcommand{\tagequation}[1]{\[\tag{\equationref}#1\]}
+\newcommand{\colour}[1]{\color{#1}}
+\newcommand{\textcolour}[2]{\textcolour{#1}{#2}}
 
 \hypersetup{
     colorlinks,
@@ -27,6 +30,8 @@
     linkcolor=black,
     urlcolor=black
 }
+
+\definecolor{desmos-red}{rgb}{c74440}
 
 \maketitle
 
@@ -262,9 +267,20 @@
 \end{itemize}
 
 
-\subsubsection*{energy}
+
+
+\subsubsection*{Standing Waves}
+
 \begin{itemize}
-    \item kinetic energy
+    \marginpar{21/2/25}
+    \item For sinusoidal case:
+    \item Choose \(x_0 = 0\) then \(y(x, t)=A\cos(kx-\omega t)-A\cos(kx+\omega t)\)
+    \item Then \(y(x, t)=Re[Ae^{i(kx - \omega t)}-Ae^{i(kx+\omega t)}]=A\cdot Re[e^{ikx}{e^{_\omega t}-e^{i\omega t}}]=A\cdot Re[e^{ikx}(-2i)\sin(\omega t)]\)
+    \item \(y(x, t)=-2A\sin(\omega t)Re[i{\cos(kx)+i\sin(kx)}]=-2A\sin(\omega t)\cdot [-\sin(kx)]\)
+    \item \(y(x, t)=2A\textcolour{purple}{\sin(\omega t)} \textcolour{desmos-red}{\sin(kx)}\)
+    \item So we can see this will just be a sin wave multiplied by an integer:
+    
+    \includegraphics[width = 0.5\linewidth]{year1/wfmp/standing waves/standing wave.png}
 \end{itemize}
 
 
