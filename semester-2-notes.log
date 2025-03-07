@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.31)  21 FEB 2025 09:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.31)  21 FEB 2025 09:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -292,6 +292,7 @@ Package grfext Info: Graphics extension search list:
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package hyperref Info: Link coloring OFF on input line 18.
+ (semester-2-notes.out) (semester-2-notes.out)
 \@outlinefile=\write3
 \openout3 = `semester-2-notes.out'.
 
@@ -348,8 +349,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 [1
 
-{C:/Users/Connor/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-No file semester-2-notes.toc.
+{C:/Users/Connor/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (semester-2-notes.toc)
 \tf@toc=\write4
 \openout4 = `semester-2-notes.toc'.
 
@@ -417,5 +417,4 @@ File: year1/wfmp/waves/basic string wave.png Graphic file (type png)
 Package pdftex.def Info: year1/wfmp/waves/basic string wave.png  used on input line 246.
 (pdftex.def)             Requested size: 159.99998pt x 106.66042pt.
 <year1/wfmp/waves/basic string wave 2.png, id=88, 1204.5pt x 803.0pt>
-File: year1/wfmp/waves/basic string wave 2.png Graphic file (type png)
-<use year1/wfmp/waves/bas
+File: year1/wfmp/waves/basic string wave 2.png Graphic f
